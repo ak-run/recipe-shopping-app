@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,11 +22,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #ffd3b6;
+}
+h1 {
+  font-family: "Gochi Hand", sans-serif;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Gochi Hand", sans-serif;
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+/* .first-colour {
+        background-color: #a8e6cf;
+      }
+      .second-colour {
+        background-color: #fdffab;
+      }
+
+      .third-colour {
+        background-color: #ffd3b6;
+      }
+
+      .fourth-colour {
+        background-color: #ffaaa5;
+      } */
