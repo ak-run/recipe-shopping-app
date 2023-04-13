@@ -1,20 +1,25 @@
-import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
+import React, { useState } from 'react';
 import './App.css';
-import './App';
+import ListDisplay from './components/ListDisplay';
+import InputText from './components/InputText';
 
-function ShoppingList() {
+function ShoppingList () {
+  const [items, setItems] = useState([
+    "item 1", "item 2", "item 3"
+  ]);
   return (
-    <>
-    <div className="ShoppingList">
-      <header className="ShoppingList-header">
-    
-
-        <h1>Shopping List</h1>
-      
-      </header>
+    <div id="list-container">
+    {/* ListDisplay component receives items array and a handleClick function to delete items */}
+      <ListDisplay items={items} handleClick={(item) => {
+        setItems(items.slice().filter((i) => i !== item));
+      }}/>
+    {/* InputText component receives a handleSubmit function to add new items */}
+      <InputText handleSubmit={(item) => {
+          setItems(items.concat(item));
+        }}
+      />
     </div>
-    </>
-  );
+  )
 }
 
 export default ShoppingList;

@@ -1,6 +1,8 @@
+//to link the pages, importing from react-router-dom
 import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
 import './App.css';
 import ShoppingList from './ShoppingList';
+
 
 function App() {
   return (
