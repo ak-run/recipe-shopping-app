@@ -1,0 +1,7 @@
+*, **::before, *::after {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #f44336;
+}
