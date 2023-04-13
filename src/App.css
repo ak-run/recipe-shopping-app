@@ -1,3 +1,9 @@
+/* firs set up everything to border-box sizing. 
+This is a CSS code that sets the box-sizing property to border-box for all elements, as well as for their ::before and ::after pseudo-elements.*/
+*, **::before, *::after {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -68,3 +74,8 @@ h3 {
       .fourth-colour {
         background-color: #ffaaa5;
       } */
+
+.search-bar{
+  padding: 10px;
+  align-items: center;
+}

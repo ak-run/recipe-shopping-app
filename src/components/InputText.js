@@ -9,7 +9,11 @@ const InputText = (props) => {
       props.handleSubmit(value);
       setValue('');
     }}>
-      <input type="text" value={value} onChange={e => setValue(e.target.value)}/>
+      <input 
+        type="text" 
+        placeholder="Add an Item"
+        value={value} 
+        onChange={e => setValue(e.target.value)}/>
     </form>
   );
 };

@@ -4,9 +4,7 @@ import ListDisplay from './components/ListDisplay';
 import InputText from './components/InputText';
 
 function ShoppingList () {
-  const [items, setItems] = useState([
-    "item 1", "item 2", "item 3"
-  ]);
+  const [items, setItems] = useState([]);
   return (
     <div id="list-container">
     {/* ListDisplay component receives items array and a handleClick function to delete items */}
