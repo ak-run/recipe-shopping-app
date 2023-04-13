@@ -5,12 +5,13 @@ import InputText from './components/InputText';
 
 function ShoppingList () {
   const [items, setItems] = useState([]);
+  {/* ListDisplay component receives items array and a handleClick function to delete items */}
+  const handleRemove = (item) => {
+    setItems(items.filter((i) => i !== item));
+  };
   return (
     <div id="list-container">
-    {/* ListDisplay component receives items array and a handleClick function to delete items */}
-      <ListDisplay items={items} handleClick={(item) => {
-        setItems(items.slice().filter((i) => i !== item));
-      }}/>
+      <ListDisplay items={items} handleRemove={handleRemove} />
     {/* InputText component receives a handleSubmit function to add new items */}
       <InputText handleSubmit={(item) => {
           setItems(items.concat(item));

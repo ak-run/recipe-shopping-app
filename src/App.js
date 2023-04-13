@@ -48,7 +48,7 @@ function App() {
           <Router>
             <div>
               <nav>
-                <h1 onClick={getData}>test api</h1>
+                <h1 onClick={getData}></h1>
                 <h3>
                   <Link to="/ShoppingList">Make a Shopping List</Link>
                 </h3>
