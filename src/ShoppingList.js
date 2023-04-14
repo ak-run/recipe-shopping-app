@@ -9,7 +9,10 @@ function ShoppingList () {
   const handleRemove = (item) => {
     setItems(items.filter((i) => i !== item));
   };
+
   return (
+    <>
+    <h2 className='my-shopping-list'>My Shopping List</h2>
     <div id="list-container">
       <ListDisplay items={items} handleRemove={handleRemove} />
     {/* InputText component receives a handleSubmit function to add new items */}
@@ -18,6 +21,7 @@ function ShoppingList () {
         }}
       />
     </div>
+    </>
   )
 }
 

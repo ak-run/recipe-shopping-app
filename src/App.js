@@ -1,6 +1,6 @@
 //to link the pages, importing from react-router-dom
-import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import React, { useEffect, useState, Fragment } from 'react';
 import './App.css';
 import ShoppingList from './ShoppingList';
 import Axios from "axios";
@@ -30,8 +30,8 @@ function App() {
   return (
     <>
       <div className="App">
+      <Router>
         <header className="App-header">
-          <Router>
             <div>
               <nav>
                 <h1 onClick={getData}></h1>
@@ -43,10 +43,10 @@ function App() {
                 </h3>
               </nav>
               <Routes>
-                <Route path="/ShoppingList" element={<ShoppingList />} />
+                <Route path="/" exact component={RecipeCard} />
+                <Route path="/ShoppingList" exact element={<ShoppingList />} />
               </Routes>
             </div>
-          </Router>
         </header>
         <div className="container mt-4">
       <h1>Recipe Finder</h1>
@@ -68,6 +68,7 @@ function App() {
       </form>
       <RecipeCard recipes={recipes} />
     </div>
+    </Router>
       </div>
     </>
   );
