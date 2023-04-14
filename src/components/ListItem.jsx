@@ -5,21 +5,32 @@ import './Components.css';
 const ListItem = (props) => {
   //adding functionality to cross items on the shopping list and uncross them
   const [isCrossed, setIsCrossed] = useState(false);
-  const handleClick = () => {
-    setIsCrossed(!isCrossed);
+  const handleClick = (event) => {
+    if (event.target.tagName !== "BUTTON") {
+      setIsCrossed(!isCrossed);
+    }
   };
+  
+
   const handleRemove = () => {
     props.handleRemove(props.name);
   };
+  
   const listItemStyle = {
-    textDecoration: isCrossed ? "line-through" : "none"
+    textDecoration: isCrossed ? "line-through" : "none",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    flexWrap: "wrap",
+    zIndex: 1
   };
+
   return (
     <li style={listItemStyle}>
-      {/*This is where each item is added as a text*/}
       <span onClick={handleClick}>{props.name}</span>
-       {/*This is the button to remove an item set to display x*/}     
-      <button className="RemoveButton" onClick={handleRemove}>x</button>
+      <button className='RemoveButton' onClick={handleRemove}>
+        <span className="RemoveButton__text">x</span>
+      </button>
     </li>
   );
 };

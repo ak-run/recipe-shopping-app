@@ -4,43 +4,29 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import ShoppingList from './ShoppingList';
 import Axios from "axios";
-
-
+import RecipeCard from './RecipeCard';
 function App() {
   const APP_ID = "fa099eb5";
   const APP_KEY = "2f165b5ae763968bfd4088e30dcdcff5";
   const url = `https://api.edamam.com/search?q=pizza&app_id=${APP_ID}&app_key=${APP_KEY}`;
-
   const getData = async () => {
     const result = await Axios.get(url);
     console.log(result);
   };
-
-  // const [recipes, setRecipes] = useState([]);
-  // const [search, setSearch] = useState("");
-  // const [query, setQuery] = useState("chicken");
-
-  // useEffect(() => {
-  //   getRecipes();
-  // }, [query])
-  
-  // const getRecipes = async () => {
-  //   const response = await fetch
-  //         (url);
-  //   const data = await response.json();
-  //   setRecipes(data.hits);
-  // };
-
-  // const updateSearch = e => {
-  //   setSearch(e.target.value);
-  // };
-
-  // const getSearch = e => {
-  //   e.preventDefault();
-  //   setQuery(search);
-  //   setSearch("");
-  // }
-  
+  const [recipes, setRecipes] = useState([]);
+  const [query, setQuery] = useState("");
+  const searchRecipes = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await Axios.get(
+        `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=fa099eb5&app_key=2f165b5ae763968bfd4088e30dcdcff5`
+      );
+      const data = response.data;
+      setRecipes(data.hits);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <>
       <div className="App">
@@ -56,27 +42,34 @@ function App() {
                   <Link to="/App">Back to Homepage</Link>
                 </h3>
               </nav>
-
               <Routes>
                 <Route path="/ShoppingList" element={<ShoppingList />} />
               </Routes>
             </div>
           </Router>
         </header>
-       {/* adding search bar
-        <div className='search-bar'> 
-      <form className="search-form" onSubmit={getSearch}  >
-        <input className="search-bar" type="text" value={search}
-             onChange={updateSearch} />
-        <button className="search-button" type="submit" >
-             Search
-        </button>
+        <div className="container mt-4">
+      <h1>Recipe Finder</h1>
+      <form onSubmit={searchRecipes}>
+        <div className="input-group mb-3">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Search for recipes..."
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+          />
+          <div className="input-group-append">
+            <button className="btn btn-primary" type="submit">
+              Search
+            </button>
+          </div>
+        </div>
       </form>
-    </div> */}
-
+      <RecipeCard recipes={recipes} />
+    </div>
       </div>
     </>
   );
 }
-
 export default App;

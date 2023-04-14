@@ -12,14 +12,17 @@ const InputText = (props) => {
   };
 //returning a form containing a text input and a submit button with an onSubmit event that calls handleSubmit function with the current value of the input as argument
   return (
+    <div className='AddItemBox'>
     <form onSubmit={handleSubmit}>
       <input 
+        className='ItemInput'
         type="text" 
         placeholder="Add an Item"
         value={value} 
         onChange={e => setValue(e.target.value)}
       />
     </form>
+    </div>
   );
 };
 

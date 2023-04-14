@@ -1,7 +1,75 @@
 *, **::before, *::after {
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+
+#list-container {
+  width: 400px;
+  margin: auto;
+}
+#list-container ul {
+  padding: 0;
+  list-style: none;
+}
+#list-container ul li {
+  padding: 5px;
+  font-size: 24px;
+  background-color: #a8e6cf;
+  color: black;
+  margin-bottom: 2px;
+  overflow: auto;
+  height: fit-content;
+}
+#list-container input {
+  width: 100%;
+  height: 35px;
+}
+
+
+
+/* 
+* {
+  margin: 0;
+  padding: 0;
 }
 
 button {
-  background-color: #f44336;
+  background-color: #fdffab;
 }
+
+.ListDisplay {
+  background-color: #fdffab;
+  width: 500px;
+  height: min-content;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.35);
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+.AddItemBox {
+  background: #fdffab;
+  color: #ec645b;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+ */
+
+.ItemInput {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+.RemoveButton, .RemoveButton__text {
+  text-decoration: none !important;
+  pointer-events: none !important;
+  color: white;
+  background-color: black;
+}
+

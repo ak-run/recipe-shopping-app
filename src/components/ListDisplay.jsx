@@ -13,7 +13,7 @@ const ListDisplay = (props) => {
       ));
   //returning unordered list containing all the ListItem components
   return (
-    <ul>
+    <ul className="ListDisplay">
       {items}
     </ul>
   );
