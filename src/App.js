@@ -1,8 +1,11 @@
 //to link the pages, importing from react-router-dom
-import { BrowserRouter as Router, Routes, Route, Link,} from 'react-router-dom';
-import './App.css';
-import ShoppingList from './ShoppingList';
-import RecipeFinder from './RecipeFinder';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "./App.css";
+import ShoppingList from "./ShoppingList";
+import RecipeFinder from "./RecipeFinder";
+import Hero from "./components/heroBanner";
+import Footer from "./components/footer";
+import Cards from "./components/navCards";
 // import React, { useEffect, useState } from 'react';
 // import Axios from "axios";
 // import RecipeCard from './RecipeCard';
@@ -32,19 +35,26 @@ function App() {
   return (
     <>
       <div className="App">
-      <Router>
-        <header className="App-header">
+        <Hero />
+        <Router>
+          <header className="App-header">
             <div>
               <nav>
                 {/* <h1 onClick={getData}></h1> */}
-                <h3 className='LinkHeader'>
-                  <Link to="/RecipeFinder" className='Link'>Recipe Finder</Link>
+                <h3 className="LinkHeader">
+                  <Link to="/RecipeFinder" className="Link">
+                    Recipe Finder
+                  </Link>
                 </h3>
-                <h3 className='LinkHeader'>
-                  <Link to="/ShoppingList" className='Link'>Make a Shopping List</Link>
+                <h3 className="LinkHeader">
+                  <Link to="/ShoppingList" className="Link">
+                    Make a Shopping List
+                  </Link>
                 </h3>
-                <h3 className='LinkHeader'>
-                  <Link to="/App" className='Link'>Homepage</Link>
+                <h3 className="LinkHeader">
+                  <Link to="/App" className="Link">
+                    Homepage
+                  </Link>
                 </h3>
               </nav>
               {/*using Routes to link between pages */}
@@ -54,8 +64,10 @@ function App() {
                 <Route path="/RecipeFinder" exact element={<RecipeFinder />} />
               </Routes>
             </div>
-        </header>
-    </Router>
+          </header>
+        </Router>
+        <Cards />
+        <Footer />
       </div>
     </>
   );
