@@ -12,7 +12,7 @@ function ShoppingList () {
 
   return (
     <>
-    <h2 className='my-shopping-list'>My Shopping List</h2>
+    <h1 className='my-shopping-list'>My Shopping List</h1>
     <div id="list-container">
       <ListDisplay items={items} handleRemove={handleRemove} />
     {/* InputText component receives a handleSubmit function to add new items */}

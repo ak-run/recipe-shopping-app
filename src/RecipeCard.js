@@ -1,6 +1,7 @@
 import React from "react";
 import './App';
 import "./App.css"; 
+import RecipeFinder from "./RecipeFinder";
 const RecipeCard = ({ recipes }) => {
   return (
     <div>

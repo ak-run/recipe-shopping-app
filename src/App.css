@@ -79,3 +79,14 @@ h3 {
   padding: 10px;
   align-items: center;
 }
+
+.Link {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.LinkHeader {
+  padding: 0px;
+}

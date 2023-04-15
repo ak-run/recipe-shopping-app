@@ -1,10 +1,12 @@
 //to link the pages, importing from react-router-dom
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import React, { useEffect, useState, Fragment } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link,} from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import ShoppingList from './ShoppingList';
 import Axios from "axios";
 import RecipeCard from './RecipeCard';
+import RecipeFinder from './RecipeFinder';
+
 function App() {
   const APP_ID = "fa099eb5";
   const APP_KEY = "2f165b5ae763968bfd4088e30dcdcff5";
@@ -35,20 +37,24 @@ function App() {
             <div>
               <nav>
                 <h1 onClick={getData}></h1>
-                <h3>
-                  <Link to="/ShoppingList">Make a Shopping List</Link>
+                <h3 className='LinkHeader'>
+                  <Link to="/ShoppingList" className='Link'>Make a Shopping List</Link>
                 </h3>
-                <h3>
-                  <Link to="/App">Back to Homepage</Link>
+                <h3 className='LinkHeader'>
+                  <Link to="/App" className='Link'>Back to Homepage</Link>
+                </h3>
+                <h3 className='LinkHeader'>
+                  <Link to="/RecipeFinder" className='Link'>Recipe Finder</Link>
                 </h3>
               </nav>
               <Routes>
-                <Route path="/" exact component={RecipeCard} />
+                {/* <Route path="/" exact component={RecipeCard} /> */}
                 <Route path="/ShoppingList" exact element={<ShoppingList />} />
+                <Route path="/RecipeFinder" exact element={<RecipeFinder />} />
               </Routes>
             </div>
         </header>
-        <div className="container mt-4">
+        {/* <div className="container mt-4">
       <h1>Recipe Finder</h1>
       <form onSubmit={searchRecipes}>
         <div className="input-group mb-3">
@@ -67,7 +73,7 @@ function App() {
         </div>
       </form>
       <RecipeCard recipes={recipes} />
-    </div>
+    </div> */}
     </Router>
       </div>
     </>
