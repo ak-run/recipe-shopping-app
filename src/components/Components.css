@@ -68,7 +68,6 @@ button {
 
 .RemoveButton, .RemoveButton__text {
   text-decoration: none !important;
-  pointer-events: none !important;
   color: white;
   background-color: black;
 }
