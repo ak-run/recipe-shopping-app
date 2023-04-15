@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 import Axios from "axios";
-import RecipeCard from './RecipeCard';
+import RecipeCard from "./RecipeCard";
+import Footer from "./components/footer";
 
 function RecipeFinder() {
   const APP_ID = "fa099eb5";
@@ -45,6 +46,7 @@ function RecipeFinder() {
         </form>
         <RecipeCard recipes={recipes} />
       </div>
+      <Footer />
     </>
   );
 }
