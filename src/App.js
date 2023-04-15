@@ -34,8 +34,8 @@ function App() {
   // };
   return (
     <>
+      <Hero />
       <div className="App">
-        <Hero />
         <Router>
           <header className="App-header">
             <div>
