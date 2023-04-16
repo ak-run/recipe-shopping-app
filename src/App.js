@@ -5,7 +5,8 @@ import ShoppingList from "./ShoppingList";
 import RecipeFinder from "./RecipeFinder";
 import Hero from "./components/heroBanner";
 import Footer from "./components/footer";
-import Cards from "./components/navCards";
+import Card from "./components/navCardGroup";
+import "bootstrap/dist/css/bootstrap.min.css";
 // import React, { useEffect, useState } from 'react';
 // import Axios from "axios";
 // import RecipeCard from './RecipeCard';
@@ -65,7 +66,7 @@ function App() {
             </Routes>
           </div>
         </Router>
-        <Cards />
+        <Card />
         <Footer />
       </div>
     </>
