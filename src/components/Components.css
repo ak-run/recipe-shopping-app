@@ -123,6 +123,11 @@ video {
   overflow: hidden;
 }
 
+.nav-card-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
 .btn-primary {
   background-color: #a8e6cf !important;
   color: white !important;
