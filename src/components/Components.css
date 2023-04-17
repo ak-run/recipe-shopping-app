@@ -81,8 +81,8 @@ button {
 }
 
 /* Hero Banner */
-h1 {
-  font-size: 4rem;
+.hero h1 {
+  font-size: 6rem;
   margin-bottom: 0;
 }
 
@@ -125,20 +125,60 @@ video {
 
 /* Cards */
 
-/* Footer */
+.card {
+  width: 30rem;
+}
 
-h3 {
+.card:hover {
+  box-shadow: 5px 10px 20px 1px #a8e6cf !important;
+}
+
+.card-img-top {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.8);
+}
+
+.card-title {
   font-size: 2rem;
 }
+
+.card-text {
+  font-size: 1.25rem;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.btn-primary {
+  background-color: #a8e6cf !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #fdffab !important;
+  color: #a8e6cf !important;
+}
+
+/* Footer */
 
 .footer {
   text-align: left;
   background-color: #ffaaa5;
   padding: 15px 0px 50px 50px;
+  margin-top: 35px;
 }
 
 .footer h3 {
+  font-size: 2rem;
   margin-bottom: 25px;
+  margin-top: 25px;
+  font-family: "Gochi Hand", sans-serif;
 }
 
 .footer a {

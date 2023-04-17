@@ -6,9 +6,9 @@ import Footer from "./components/footer";
 
 function ShoppingList() {
   const [items, setItems] = useState([]);
-  {
-    /* ListDisplay component receives items array and a handleClick function to delete items */
-  }
+
+  /* ListDisplay component receives items array and a handleClick function to delete items */
+
   const handleRemove = (item) => {
     setItems(items.filter((i) => i !== item));
   };
