@@ -69,3 +69,9 @@ h3 {
   background-color: #fdffab !important;
   color: #a8e6cf !important;
 }
+
+.ItemInput {
+  border-radius: 5px;
+  border: 2px solid #a8e6cf;
+  padding: 5px;
+}
