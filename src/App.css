@@ -75,3 +75,14 @@ h3 {
   border: 2px solid #a8e6cf;
   padding: 5px;
 }
+
+.form-control {
+  margin-right: 10px;
+  border-radius: 5px !important;
+  border: 2px solid #a8e6cf !important;
+  padding: 5px !important;
+}
+
+.my-shopping-list {
+  font-size: 3rem;
+}
