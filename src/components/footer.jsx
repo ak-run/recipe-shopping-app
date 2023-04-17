@@ -14,9 +14,9 @@ const Footer = () => {
         </p>
         <p>
           <strong>
-            Coded by <a href="https://github.com/ak-run">Agata</a>,{" "}
-            <a href="https://github.com/efhewett">Ellen</a> and{" "}
-            <a href="https://github.com/natlmartin">Natalie</a>.
+            Coded by <a href="https://github.com/ak-run" target="_blank">Agata</a>,{" "}
+            <a href="https://github.com/efhewett" target="_blank" >Ellen</a> and{" "}
+            <a href="https://github.com/natlmartin" target="_blank" >Natalie</a>.
           </strong>
         </p>
       </div>
