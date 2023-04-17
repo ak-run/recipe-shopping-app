@@ -64,3 +64,8 @@ h3 {
   color: white !important;
   border: none !important;
 }
+
+.recipe-url:hover {
+  background-color: #fdffab !important;
+  color: #a8e6cf !important;
+}
