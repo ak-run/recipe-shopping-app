@@ -14,9 +14,9 @@ function App() {
       <div className="App">
         <Router>
           <div>
-          {/* <header>
+          <header>
           <Hero />
-          </header> */}
+          </header>
             {/*using Routes to link between pages */}
             <Routes>
               {/* <Route path="/" exact component={RecipeCard} /> */}

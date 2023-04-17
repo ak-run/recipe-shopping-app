@@ -7,10 +7,10 @@ const Hero = () => {
   return (
     <div className="hero">
       <video src={heroVideo} autoPlay loop muted />
-      <div className="hero-content">
+      {/* <div className="hero-content">
         <h1>Find your next recipe</h1>
         <p>Discover recipes and create your shopping list</p>
-      </div>
+      </div> */}
     </div>
   );
 };
