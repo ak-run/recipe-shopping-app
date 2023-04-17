@@ -20,7 +20,9 @@ const RecipeCard = ({ recipes }) => {
               </p>
               <p>
                 <a href={recipe.recipe.url} target="_blank" rel="noreferrer">
-                  <button className="recipe-url">Go to the recipe</button>
+                  <button className="recipe-url btn btn-primary">
+                    Go to the recipe
+                  </button>
                 </a>
               </p>
             </li>

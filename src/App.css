@@ -86,3 +86,7 @@ h3 {
 .my-shopping-list {
   font-size: 3rem;
 }
+
+.list-group {
+  padding-bottom: 25px;
+}
