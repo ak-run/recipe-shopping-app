@@ -58,3 +58,9 @@ h3 {
 .LinkHeader {
   padding: 0px;
 }
+
+.recipe-url {
+  background-color: #a8e6cf !important;
+  color: white !important;
+  border: none !important;
+}
