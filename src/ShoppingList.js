@@ -25,7 +25,7 @@ function ShoppingList() {
           }}
         />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

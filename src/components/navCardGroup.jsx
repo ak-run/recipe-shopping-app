@@ -5,6 +5,13 @@ import cooking from "../assets/cooking.jpg";
 import shopping from "../assets/foodShopping.jpg";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
 class Cards extends Component {
   render() {
     return (
@@ -12,7 +19,11 @@ class Cards extends Component {
       <div className="container-fluid d-flex justify-content-center align-items-center">
         <div className="row">
           <div className="col-md-6">
-          <Link to="/RecipeFinder" className="Link">
+          <Link 
+            to="/RecipeFinder" 
+            className="Link"
+            onClick={scrollToTop}
+            >
             <Card
               imgsrc={cooking}
               title="Find a recipe"
@@ -22,7 +33,11 @@ class Cards extends Component {
             </Link>
           </div>
           <div className="col-md-6">
-          <Link to="/ShoppingList" className="Link">
+          <Link 
+            to="/ShoppingList" 
+            className="Link"
+            onClick={scrollToTop}
+            >
             <Card
               imgsrc={shopping}
               title="Create a shopping list"

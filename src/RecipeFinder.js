@@ -46,7 +46,7 @@ function RecipeFinder() {
         </form>
         <RecipeCard recipes={recipes} />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
