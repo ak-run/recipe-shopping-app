@@ -27,7 +27,11 @@ function RecipeFinder() {
   return (
     <>
       <div className="container mt-4">
-        <h1>Recipe Finder</h1>
+        <h1 class="my-shopping-list">Recipe Finder</h1>
+        <p>
+          Enter an ingredient or recipe in the box below and hit enter to search
+          for a recipe.
+        </p>
         <form onSubmit={searchRecipes}>
           <div className="input-group mb-3">
             <input

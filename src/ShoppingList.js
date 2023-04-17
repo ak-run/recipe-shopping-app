@@ -15,7 +15,11 @@ function ShoppingList() {
 
   return (
     <>
-      <h1 className="my-shopping-list">My Shopping List</h1>
+      <h1 className="my-shopping-list">Create a Shopping List</h1>
+      <p>
+        Enter an ingredient in the box below and hit enter to add an item to
+        your shopping list.
+      </p>
       <div id="list-container">
         <ListDisplay items={items} handleRemove={handleRemove} />
         {/* InputText component receives a handleSubmit function to add new items */}
