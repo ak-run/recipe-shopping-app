@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/recipe-shopping-app/static/css/main.10f03759.css",
-    "main.js": "/recipe-shopping-app/static/js/main.96b0757f.js",
+    "main.css": "/recipe-shopping-app/static/css/main.8d0e8bba.css",
+    "main.js": "/recipe-shopping-app/static/js/main.420d021c.js",
     "static/js/787.38f5941d.chunk.js": "/recipe-shopping-app/static/js/787.38f5941d.chunk.js",
     "static/media/coverr-cat.mp4": "/recipe-shopping-app/static/media/coverr-cat.e562e13562f1db4ed2af.mp4",
     "static/media/foodShopping.jpg": "/recipe-shopping-app/static/media/foodShopping.eab4ef78ba6b6a95afea.jpg",
     "static/media/cooking.jpg": "/recipe-shopping-app/static/media/cooking.997810df0eed503eadd4.jpg",
     "index.html": "/recipe-shopping-app/index.html",
-    "main.10f03759.css.map": "/recipe-shopping-app/static/css/main.10f03759.css.map",
-    "main.96b0757f.js.map": "/recipe-shopping-app/static/js/main.96b0757f.js.map",
+    "main.8d0e8bba.css.map": "/recipe-shopping-app/static/css/main.8d0e8bba.css.map",
+    "main.420d021c.js.map": "/recipe-shopping-app/static/js/main.420d021c.js.map",
     "787.38f5941d.chunk.js.map": "/recipe-shopping-app/static/js/787.38f5941d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10f03759.css",
-    "static/js/main.96b0757f.js"
+    "static/css/main.8d0e8bba.css",
+    "static/js/main.420d021c.js"
   ]
 }
