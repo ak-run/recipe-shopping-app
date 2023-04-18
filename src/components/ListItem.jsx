@@ -17,7 +17,6 @@ const ListItem = (props) => {
   };
   
   const listItemStyle = {
-    textDecoration: isCrossed ? "line-through" : "none",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
@@ -25,9 +24,13 @@ const ListItem = (props) => {
     zIndex: 1
   };
 
+  const itemTextStyle = {
+    textDecoration: isCrossed ? "line-through" : "none",
+  }
+
   return (
     <li style={listItemStyle}>
-      <span onClick={handleClick}>{props.name}</span>
+      <span style={itemTextStyle} onClick={handleClick}>{props.name}</span>
       <button className='RemoveButton' onClick={handleRemove}>
         <span className="RemoveButton__text">x</span>
       </button>
