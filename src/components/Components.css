@@ -167,3 +167,9 @@ video {
   font-size: 1rem;
   margin-bottom: 0;
 }
+
+@media (max-width: 560px) {
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+}
