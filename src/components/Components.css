@@ -172,4 +172,8 @@ video {
   .hero-content h1 {
     font-size: 4rem;
   }
+
+  .text-center {
+    width: 100%;
+  }
 }

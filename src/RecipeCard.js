@@ -29,7 +29,7 @@ const RecipeCard = ({ recipes }) => {
           ))}
         </ul>
       ) : (
-        <p>No recipes found. Please search for recipes above.</p>
+        <p></p>
       )}
     </div>
   );
