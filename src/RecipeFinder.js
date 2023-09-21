@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Axios from "axios";
 import RecipeCard from "./RecipeCard";
-import { APP_ID, APP_KEY } from "./config.js";
+import { APP_ID, APP_KEY } from "./configuration.js";
 import Footer from "./components/footer";
 
 function RecipeFinder() {
