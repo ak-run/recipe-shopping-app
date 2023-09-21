@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import "./App.css";
 import Axios from "axios";
 import RecipeCard from "./RecipeCard";
+import { APP_ID, APP_KEY } from "./config.js";
 import Footer from "./components/footer";
 
 function RecipeFinder() {
-  const APP_ID = "fa099eb5";
-  const APP_KEY = "2f165b5ae763968bfd4088e30dcdcff5";
 
   const [recipes, setRecipes] = useState([]);
   const [query, setQuery] = useState("");
-
   const searchRecipes = async (event) => {
     event.preventDefault();
     try {
