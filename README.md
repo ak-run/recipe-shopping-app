@@ -48,5 +48,7 @@ Before you can run this project, you need to have Node.js and npm (Node Package 
 
 If you don't have them installed, you can download and install Node.js from [nodejs.org](https://nodejs.org/).
 
+You'll also need to set up your own API_ID and API_KEY, and store them in configuration.js file in src folder.
+
 Enjoy managing your shopping list and exploring new recipes with our web app!
 
